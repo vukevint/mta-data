@@ -1,0 +1,16 @@
+*.egg-info
+.python-version
+.ropeproject
+.spyproject
+.vscode
+build
+libpostal
+.DS_Store
+__pycache__
+**/.ipynb_checkpoints
+data/
+cache/
+dist/
+logs/
+.jupyter
+uv.lock

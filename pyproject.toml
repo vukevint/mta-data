@@ -1,18 +1,24 @@
-[tool.poetry]
+[build-system]
+requires = ["uv_build>=0.11.14,<0.12.0"]
+build-backend = "uv_build"
+
+[project]
 name = "mta-data"
 version = "0.1.0"
 description = ""
-authors = ["Kevin Vu <vu.kevin.t@gmail.com>"]
+authors = [{ name = "Kevin Vu", email = "vu.kevin.t@gmail.com" }]
+requires-python = ">=3.11,<4"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.11"
-pandas = "^2.2.0"
-numpy = "^1.26.4"
-ipykernel = "^6.29.2"
-matplotlib = "^3.8.2"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = [
+    "pandas>=2.2.0,<3",
+    "numpy>=1.26.4,<2",
+    "ipykernel>=6.29.2,<7",
+    "matplotlib>=3.8.2,<4",
+]
